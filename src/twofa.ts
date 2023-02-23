@@ -68,7 +68,7 @@ const { values: { help, account, service, num } } = parseArgs({
   },
 }) as { values: Options };
 
-if (help) {
+if (help || (!account && !service)) {
   showHelp();
   process.exit(0);
 }
