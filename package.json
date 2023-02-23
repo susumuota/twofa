@@ -1,0 +1,37 @@
+{
+  "name": "twofa",
+  "version": "0.9.0",
+  "description": "Two-Factor Authentication CLI",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist ; esbuild --bundle --minify --format=esm --platform=node --outdir=dist --out-extension:.js=.mjs src/*.ts",
+    "watch": "esbuild --watch --sourcemap=inline --bundle --format=esm --platform=node --outdir=dist --out-extension:.js=.mjs src/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susumuota/twofa.git"
+  },
+  "keywords": [
+    "two factor authentication",
+    "oen-time password",
+    "hotp",
+    "totp",
+    "cli",
+    "keychain"
+  ],
+  "author": "Susumu OTA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/susumuota/twofa/issues"
+  },
+  "homepage": "https://github.com/susumuota/twofa#readme",
+  "devDependencies": {
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@types/node": "^18.14.0",
+    "esbuild": "^0.17.8"
+  },
+  "dependencies": {
+    "@scure/base": "^1.1.1"
+  }
+}
