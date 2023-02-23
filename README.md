@@ -2,6 +2,8 @@
 
 Two-Factor Authentication CLI for macOS and Linux.
 
+![twofa](https://user-images.githubusercontent.com/1632335/220855756-ab67ebb0-68a3-49cf-ac8d-709985a178e3.png)
+
 ## Install
 
 ```sh
@@ -57,6 +59,8 @@ Options:
 ```sh
 node dist/twofa.mjs -a username -s servicename -n 2
 ```
+
+![twofa](https://user-images.githubusercontent.com/1632335/220855756-ab67ebb0-68a3-49cf-ac8d-709985a178e3.png)
 
 ## Related Links
 
